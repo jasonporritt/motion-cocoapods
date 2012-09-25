@@ -67,6 +67,7 @@ module Motion::Project
         cp_config.silent = true
       end
 
+      cp_config.new_version_message = false
       cp_config.integrate_targets = false
       cp_config.project_root = Pathname.new(File.expand_path(config.project_dir)) + 'vendor'
     end
