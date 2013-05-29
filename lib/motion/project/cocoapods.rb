@@ -126,7 +126,8 @@ module Motion::Project
       @config.vendor_project(PODS_ROOT, :xcode,
         :target => 'Pods',
         :headers_dir => 'Headers',
-        :products => %w{ libPods.a }
+        :products => %w{ libPods.a },
+        :configuration => 'development'
       )
 
       if ldflags = pods_xcconfig.to_hash['OTHER_LDFLAGS']
