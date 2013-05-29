@@ -127,7 +127,7 @@ module Motion::Project
         :target => 'Pods',
         :headers_dir => 'Headers',
         :products => %w{ libPods.a },
-        :configuration => 'development'
+        :configuration => 'Debug'
       )
 
       if ldflags = pods_xcconfig.to_hash['OTHER_LDFLAGS']
